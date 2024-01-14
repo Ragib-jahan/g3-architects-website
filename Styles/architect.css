@@ -178,15 +178,35 @@ nav>ul>li>a {
     padding: 40px;
 }
 
+.feature-img img {
+    height: 70%;
+
+
+}
+
 .ten-years-badge {
-    width:342px ;
+    width: 342px;
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
-}
-.ten-years-badge h2{
-    font-size:4rem ;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    right: 100px;
 
+
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
 }
 
 /* Facts Section Start  */
@@ -276,7 +296,8 @@ footer {
 @media screen and (max-width:576px) {
 
     nav,
-    .team-container {
+    .team-container,
+    .features {
         flex-direction: column;
         gap: 20px;
     }
@@ -298,6 +319,15 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+
+    .feature-img img {
+        width: 100%;
+    }
+
+    .ten-years-badge {
+        width: 300px;
+        position: static;
+    }
 }
 
 /* table or medium devices */
@@ -306,7 +336,8 @@ footer {
     nav,
     .team-container,
     .facts-card-container,
-    .sponsor-img {
+    .sponsor-img,
+    .features {
         flex-direction: column;
         gap: 20px;
     }
