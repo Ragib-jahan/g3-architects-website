@@ -9,6 +9,12 @@
     padding: 0;
 }
 
+.text-light-gray {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 .btn-primary {
     border-radius: 8px;
     color: #FFF;
@@ -77,9 +83,6 @@ nav>ul>li>a {
 }
 
 .banner-description {
-    color: #727272;
-    font-size: 1em;
-    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -91,67 +94,90 @@ nav>ul>li>a {
 
 }
 
+/* teem section start */
+main {
+    width: 75%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    padding: 3.5rem 3.8rem;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+}
+
+/* .team-img-container > img{
+    width: 100%;
+} */
+.team-content {
+    padding-left: 4.7rem;
+
+}
+
+.teams-title {
+    font-size: 2.8rem;
+    max-width: 468px;
+}
+
+.Quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.of-Our {
+    color: #131313;
+    font-weight: 700;
+}
+
+.Features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.teams-para {
+    max-width: 537px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
 
 /* responsive media queries */
 
 /* mobile devise */
 
 @media screen and (max-width:576px) {
-    nav {
+
+    nav,
+    .team-container {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .team-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-title {
+        font-size: 3rem;
     }
 }
 
 /* table or medium devices */
 @media screen and (min-width:576px) and (max-width: 960px) {
-    nav {
+
+    nav,
+    .team-container {
         flex-direction: column;
         gap: 20px;
     }
-}
-
-/* teem section start */
-main{
-    width: 75%;
-    max-width: 1440px;
-    margin: auto;
-}
-.team-container{
-    display: flex;
-    align-items: center;
-    padding:3.5rem 3.8rem;
-}
- .team-img-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    
-}
-.team-content{
-    padding-left: 4.7rem;
-
-}
-.teams-title{
-    font-size: 2.8rem;
-    max-width: 468px;
-}
-.Quick-list{
-    color:#727272 ;
-    font-weight: 500;
-}
-.of-Our{
-    color: #131313;
-    font-weight: 700;
-} 
-.Features{
-    color: #FF900E;
-    font-weight: 700;
-}
-.teams-para{
-    max-width: 537px;
-    color: #727272;
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
 }
